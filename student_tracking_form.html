@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Tracking Form</title>
+</head>
+<body>
+  <h2>Student Time-Out Tracking</h2>
+
+  <form method="POST" action="record.php">
+    <label>Student Name:</label><br>
+    <input type="text" name="student_name" required><br><br>
+
+    <label>Tracker ID:</label><br>
+    <input type="text" name="tracker_id" required><br><br>
+
+    <label>Allowed Time (in minutes):</label><br>
+    <input type="number" name="time_limit" min="1" required><br><br>
+
+    <button type="submit" name="action" value="out">Mark Time Out</button>
+    <button type="submit" name="action" value="in">Mark Time In</button>
+  </form>
+</body>
+</html>
